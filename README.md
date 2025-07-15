@@ -1,5 +1,12 @@
 <h1 align="center">Adwaita.nvim</h1>
 
+This is my version of Adwaita based on the old nvim colorscheme versus the new
+updated version that had changes to the colours I am not a fan of. This changes
+them all back, and is compatible with the 'main' branch of Treesitter.
+
+Based on (https://github.com/Mofiqul/adwaita.nvim).
+
+Original readme:
 Neovim colorscheme using Gnome Adwaita syntax
 
 ![Adwaita Nvim](./adwaita-nvim.png)
@@ -26,7 +33,7 @@ Install via package manager
 -- Lazy.nvim:
 require('lazy').setup({
     -- your other plugins
-    
+
     -- this theme
     {
         "Mofiqul/adwaita.nvim",
@@ -62,7 +69,7 @@ vim.cmd([[colorscheme adwaita]])
     "Mofiqul/adwaita.nvim",
     lazy = false,
     priority = 1000,
-    
+
     -- configure and set on startup
     config = function()
         vim.g.adwaita_darker = true             -- for darker version
@@ -96,4 +103,3 @@ require("lualine").setup({
 ## Something is broken but I know how to fix it!
 
 Pull requests are welcome! Feel free to send one with an explanation!
-
