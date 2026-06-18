@@ -6,7 +6,7 @@ local hl = u.highlight
 local M = {}
 
 local set_terminal_color = function()
-    vim.g.terminal_color_0 = colors.libadwaita_dark
+    vim.g.terminal_color_0 = colors.light_5 --libadwaita_dark
     vim.g.terminal_color_1 = colors.red_2
     vim.g.terminal_color_2 = colors.green_2
     vim.g.terminal_color_3 = colors.orange_3
@@ -232,7 +232,7 @@ M.set = function()
     hl('@textReference', { fg = colors.red_2 })
     hl('@stringEscape', { fg = colors.orange_2, bold = true })
 
-    -- Zig 
+    -- Zig
     hl('@function.call.zig', { fg = colors.chameleon_3 })
 
     -- Typescript fix
